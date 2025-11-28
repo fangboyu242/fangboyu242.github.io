@@ -184,8 +184,8 @@
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
       <a href="#referees">Referees</a>
-      <!-- 导航栏唯一的 CV：指向 assets 目录下的 cv.pdf -->
-      <a href="assets/cv.pdf" download>CV</a>
+      <!-- CV 链接：从根目录 index.html 指向 assets/cv.pdf -->
+      <a href="./assets/cv.pdf" download>CV</a>
     </div>
   </div>
 </header>
@@ -226,8 +226,8 @@
 				<span class="tag">Entrepreneurship</span>
 			</p>
 
-			<!-- 首页里的下载 CV 按钮 -->
-			<a href="assets/cv.pdf" class="cv-button" download>
+			<!-- 首页里的下载 CV 按钮，同样指向 assets/cv.pdf -->
+			<a href="./assets/cv.pdf" class="cv-button" download>
 				Download CV (PDF)
 			</a>
 
@@ -249,8 +249,8 @@
 		</div>
 
 		<div class="hero-photo">
-			<!-- 头像：在 assets 目录下，注意后缀如果不是 .jpg 请改掉 -->
-			<img src="assets/Weixin Image_20240219014452.jpg"
+			<!-- 注意这里手动把空格编码成 %20，指向 assets 目录下的图片 -->
+			<img src="./assets/Weixin%20Image_20240219014452.jpg"
 			     alt="Boyu Fang"
 			     style="width:100%;height:100%;border-radius:999px;object-fit:cover;">
 		</div>
