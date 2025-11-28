@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FANG BOYU - Academic Homepage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Academic homepage of FANG BOYU.">
+	<style>
+		:root {
+			--bg: #ffffff;
+			--fg: #222222;
+			--muted: #555555;
+			--accent: #2563eb;
+			--accent-soft: #e5edff;
+			--border: #e5e7eb;
+			--max-width: 900px;
+			--font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+		}
+		* { box-sizing: border-box; }
+		body {
+			margin: 0;
+			font-family: var(--font-sans);
+			background: var(--bg);
+			color: var(--fg);
+			line-height: 1.6;
+		}
+		a {
+			color: var(--accent);
+			text-decoration: none;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+		header {
+			border-bottom: 1px solid var(--border);
+			position: sticky;
+			top: 0;
+			background: rgba(255,255,255,0.92);
+			backdrop-filter: blur(10px);
+			z-index: 10;
+		}
+		.nav {
+			max-width: var(--max-width);
+			margin: 0 auto;
+			padding: 0.75rem 1rem;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			gap: 0.5rem;
+		}
+		.nav-left {
+			font-weight: 600;
+			font-size: 1.05rem;
+		}
+		.nav-right a {
+			margin-left: 0.75rem;
+			font-size: 0.95rem;
+		}
+		main {
+			max-width: var(--max-width);
+			margin: 1.5rem auto 3rem auto;
+			padding: 0 1rem;
+		}
+		.section {
+			margin-bottom: 2rem;
+		}
+		.section h2 {
+			font-size: 1.35rem;
+			margin-bottom: 0.5rem;
+			border-bottom: 2px solid var(--accent-soft);
+			padding-bottom: 0.25rem;
+		}
+		.muted {
+			color: var(--muted);
+			font-size: 0.95rem;
+		}
+		.hero {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 1.5rem;
+			align-items: center;
+			margin-bottom: 2rem;
+		}
+		.hero-text {
+			flex: 1 1 260px;
+		}
+		.hero h1 {
+			margin: 0 0 0.25rem 0;
+			font-size: 1.8rem;
+		}
+		.hero .title {
+			font-size: 1rem;
+			color: var(--muted);
+			margin-bottom: 0.75rem;
+		}
+		.hero .tags {
+			margin: 0.5rem 0 0.75rem 0;
+			font-size: 0.9rem;
+		}
+		.hero .tag {
+			display: inline-block;
+			background: var(--accent-soft);
+			color: var(--accent);
+			padding: 0.1rem 0.45rem;
+			border-radius: 999px;
+			margin-right: 0.25rem;
+			margin-bottom: 0.25rem;
+		}
+		.hero-photo {
+			width: 120px;
+			height: 120px;
+			border-radius: 999px;
+			background: #f3f4f6;
+			border: 1px solid var(--border);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 0.85rem;
+			color: var(--muted);
+			flex-shrink: 0;
+		}
+		.list-item {
+			margin-bottom: 0.9rem;
+		}
+		.list-title {
+			font-weight: 600;
+		}
+		.list-meta {
+			font-size: 0.9rem;
+			color: var(--muted);
+		}
+		.cv-button {
+			display: inline-block;
+			border-radius: 999px;
+			border: 1px solid var(--accent);
+			color: var(--accent);
+			padding: 0.35rem 0.9rem;
+			font-size: 0.9rem;
+			margin-top: 0.5rem;
+		}
+		.cv-button:hover {
+			background: var(--accent-soft);
+			text-decoration: none;
+		}
+		@media (max-width: 600px) {
+			.nav-right {
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.5rem;
+			}
+			.nav-right a {
+				margin-left: 0;
+				margin-right: 0.75rem;
+			}
+		}
+		footer {
+			max-width: var(--max-width);
+			margin: 0 auto 2rem auto;
+			padding: 0 1rem;
+			font-size: 0.85rem;
+			color: var(--muted);
+		}
+	</style>
+</head>
+<body>
+<header>
+	<div class="nav">
+		<div class="nav-left">FANG BOYU</div>
+		<div class="nav-right">
+			<a href="#about">About</a>
+			<a href="#research">Research</a>
+			<a href="#publications">Publications</a>
+			<a href="#projects">Projects</a>
+			<a href="#teaching">Teaching</a>
+			<a href="#cv">CV</a>
+			<a href="#contact">Contact</a>
+		</div>
+	</div>
+</header>
+
+<main>
+	<section class="hero" id="about">
+		<div class="hero-text">
+			<h1>FANG BOYU</h1>
+			<div class="title">
+				Undergraduate Student, Universidad Carlos III de Madrid (UC3M)
+				<!-- 根据实际情况改成 e.g. Master Student / PhD Student -->
+			</div>
+			<p>
+				I am an undergraduate student in <strong>[Your Program / Major]</strong> at
+				Universidad Carlos III de Madrid. My research interests lie in
+				<strong>[Area 1]</strong>, <strong>[Area 2]</strong>, and
+				<strong>[Area 3]</strong>. I am particularly interested in
+				<strong>[short one-sentence focus, e.g. building ML systems for ...]</strong>.
+			</p>
+			<p class="tags">
+				<span class="tag">Machine Learning</span>
+				<span class="tag">Data Science</span>
+				<span class="tag">[Your Topic]</span>
+				<!-- 按需要修改 / 增减 -->
+			</p>
+			<p class="muted">
+				Email: <a href="mailto:100436540@alumnos.uc3m.es">100436540@alumnos.uc3m.es</a>
+			</p>
+		</div>
+		<div class="hero-photo">
+			Your photo
+			<!-- 把这里换成 <img src="assets/me.jpg" alt="FANG BOYU" style="width:100%;height:100%;border-radius:999px;"> -->
+		</div>
+	</section>
+
+	<section class="section" id="research">
+		<h2>Research Interests</h2>
+		<ul>
+			<li>Topic 1 – short description.</li>
+			<li>Topic 2 – short description.</li>
+			<li>Topic 3 – short description.</li>
+		</ul>
+	</section>
+
+	<section class="section" id="publications">
+		<h2>Publications & Preprints</h2>
+		<p class="muted">* Under construction. Replace the examples below with your own papers.</p>
+
+		<div class="list-item">
+			<div class="list-title">
+				[Paper Title Example]
+			</div>
+			<div class="list-meta">
+				<strong>FANG BOYU</strong>, Coauthor A, Coauthor B. Conference / Journal, Year.
+				<br>
+				<a href="#">PDF</a> · <a href="#">arXiv</a> · <a href="#">Code</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="section" id="projects">
+		<h2>Projects</h2>
+
+		<div class="list-item">
+			<div class="list-title">[Project Name]</div>
+			<div class="list-meta">2025 &middot; Course project / Personal project</div>
+			<p>
+				Brief description of what you built, what problem it solves, and what your role was.
+				Mention tools / frameworks you used (e.g., Python, PyTorch, React).
+			</p>
+			<p class="list-meta">
+				<a href="#">GitHub</a> · <a href="#">Demo</a>
+			</p>
+		</div>
+
+		<div class="list-item">
+			<div class="list-title">[Another Project]</div>
+			<div class="list-meta">2024</div>
+			<p>
+				Short description here.
+			</p>
+		</div>
+	</section>
+
+	<section class="section" id="teaching">
+		<h2>Teaching & Experience</h2>
+
+		<div class="list-item">
+			<div class="list-title">[Teaching Assistant / Internship Title]</div>
+			<div class="list-meta">Institution / Company, Year – Year</div>
+			<p>
+				One or two sentences describing your responsibilities and what you worked on.
+			</p>
+		</div>
+	</section>
+
+	<section class="section" id="cv">
+		<h2>CV</h2>
+		<p>
+			You can download my full CV here:
+		</p>
+		<a class="cv-button" href="assets/cv.pdf" target="_blank" rel="noopener">
+			Download CV (PDF)
+		</a>
+		<p class="muted">
+			Place your CV file at <code>assets/cv.pdf</code> in this repository.
+		</p>
+	</section>
+
+	<section class="section" id="contact">
+		<h2>Contact</h2>
+		<p>
+			Email:
+			<a href="mailto:100436540@alumnos.uc3m.es">100436540@alumnos.uc3m.es</a>
+			<br>
+			GitHub: <a href="https://github.com/your-github-username">your-github-username</a>
+			<br>
+			LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin">your-linkedin</a>
+			<br>
+			Google Scholar: <a href="https://scholar.google.com/citations?user=XXXX">Profile</a>
+		</p>
+	</section>
+</main>
+
+<footer>
+	© <span id="year"></span> FANG BOYU. All rights reserved.
+</footer>
+
+<script>
+	document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
